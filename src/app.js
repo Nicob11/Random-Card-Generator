@@ -1,11 +1,15 @@
 /* eslint-disable */
 import "bootstrap";
 import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+import { cardsIcon } from "./modules/cardsIcon.js";
+import { cardBody } from "../src/modules/cardsBody.js";
+import { generateCard } from "../src/modules/generateCards.js";
+import { cardsIcon } from "./modules/cardsIcon.js";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  const buttonGenerator = document.getElementById("randomCard");
+  buttonGenerator.addEventListener("click", generateCard);
+
+  console.log(cardsIcon);
 };
