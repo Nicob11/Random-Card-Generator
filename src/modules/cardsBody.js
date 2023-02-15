@@ -37,6 +37,5 @@ export function cardBody(hint, numero) {
     h3.forEach(elem => {
       elem.style.color = "red";
     });
-    console.log(`cardBody function`, hint, numero);
   }
 }
