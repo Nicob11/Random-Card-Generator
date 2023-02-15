@@ -17,7 +17,6 @@ body {
 
 #card {
   background: rgb(208, 204, 204);
-  /* font-size: 200px; */
   width: 300px;
   height: 400px;
   display: flex;
@@ -25,24 +24,24 @@ body {
   border: 2px solid black;
   box-shadow: 10px 10px;
 }
-.col {
-  justify-content: center;
-  display: flex;
+
+h1 {
+  font-size: 80px;
+  font-family: "Dosis", sans-serif;
 }
-h1,
 h3 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   font-size: 100px;
-}
-#up {
-  float: left;
-}
-#down {
-  float: right;
+  font-family: "Dosis", sans-serif;
 }
 .card {
   width: 300px;
   border-radius: 10%;
+}
+#hint-top {
+  justify-content: left;
+  display: flex;
+}
+#hint-botton {
+  justify-content: right;
+  display: flex;
 }
