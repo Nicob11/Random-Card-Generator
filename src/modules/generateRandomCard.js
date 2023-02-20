@@ -1,6 +1,7 @@
 import { cards } from "./Cards";
 
 export { generateRandomCard };
+
 const generateRandomCard = () => {
   let randomHint = Math.floor(Math.random() * cards.hint.length);
   let randomValue = Math.floor(Math.random() * cards.cardValue.length);
