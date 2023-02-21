@@ -1,36 +1,88 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background: rgb(20, 162, 32);
+  background: rgb(28, 101, 249);
+  background: radial-gradient(
+    circle,
+    rgba(28, 101, 249, 1) 26%,
+    rgba(69, 165, 191, 1) 69%
+  );
+}
+
+#container_bodyCard {
+  background: rgb(131, 148, 182);
+  background: radial-gradient(
+    circle,
+    rgba(131, 148, 182, 1) 26%,
+    rgba(163, 193, 201, 1) 69%
+  );
+  width: 200px;
+  height: 250px;
+  border-radius: 10%;
+}
+#cardDiv {
+  background: white;
+  border-radius: 10%;
+  width: 200px;
+  height: 250px;
 }
 
 #randomCard {
-  border: 5px solid rgb(54, 155, 223);
-  border-radius: 20px;
-  margin: 30px;
-  background: rgb(94, 172, 152);
-  font-family: "Dosis", sans-serif;
-  color: rgb(13, 15, 12);
-  min-height: 70px;
-  box-shadow: 10px 10px;
+  margin: 10px;
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#randomCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#randomCard:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
 #card {
   background: rgb(208, 204, 204);
-  width: 300px;
-  height: 400px;
-  display: flex;
-  border-radius: 10%;
+  width: 200px;
+  height: 250px;
+  /* display: flex; */
   border: 2px solid black;
   box-shadow: 10px 10px;
 }
 
 h1 {
-  font-size: 80px;
+  /* font-size: 80px; */
   font-family: "Dosis", sans-serif;
 }
 h3 {
-  font-size: 100px;
+  /* font-size: 100px; */
   font-family: "Dosis", sans-serif;
 }
 .card {
